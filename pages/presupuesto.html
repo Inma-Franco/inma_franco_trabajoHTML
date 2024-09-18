@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Web</title>
+    <link rel="stylesheet" href="../assets/css/presupuesto.css">
+</head>
+<body>
+    <header>
+        <h1>ZAHARA</h1>
+        <h2 class="cabecera"> Home & Desing</h2>
+        <img src="../images/logodise.png" alt="logo" class="logo">
+        </header>
+        
+    <nav>
+        <div class="menu"> 
+            <span class="boton">
+                <a href="../index.html" class="menu"> Índice</a>
+            </span>
+            <span class="boton">
+                <a href="../pages/noticias.html" class="menu"> Noticias</a>
+            </span>
+            <span class="boton">
+                <a href="../pages/contacto.html" class="menu"> Encuéntranos</a>
+            </span>
+            <span class="boton">
+                <a href="../pages/productos.html" class="menu"> Galería</a>
+            </span>
+            <span class="boton">
+                <a href="../pages/presupuesto.html" class="menu"> Registro</a>
+            </span>
+
+        </div>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2> Contacta con Nosotros</h2>
+                <div> 
+                   <img src="../images/blog.png" alt="lavabo" class="normal">
+                </div>
+            </article>
+        </section>
+        <aside>
+            
+            <h2 class="h"> Rellena los siguientes campos:</h2>
+            <div class="formulario">
+                <input type="text" name="nombre" class="caja_gris" maxlength="50"
+                 size="40" id="nombre" value="" placeholder="Nombre (requerido)"
+                 required /> <br><br>
+                <input type="text" name="direccion" class="caja_gris" maxlength="50"
+                 size="40" id="direccion" value="" placeholder="Dirección (requerido)"
+                 required /> <br><br>
+                 <input type="tel" name="telefono" class="caja_gris" maxlength="50"
+                 size="40" id="telefono" value="" placeholder="Teléfono (requerido)"
+                 required /> <br><br>
+                 <input type="number" name="edad" class="caja_gris" id="edad" min="0" max="120" placeholder="Edad (requerido)" required /> <br><br>
+                 <input type="email" name="email" class="caja_gris" maxlength="50"
+                 size="40" id="mail" value="" placeholder="E-mail (requerido)"
+                 required /> <br><br>
+                 <input type="submit" name="Boton de enviar" value="ENVIAR FORMULARIO" class="boton_form morado" />
+                 <input type="reset" name="Boton de borrado" value="BORRAR FORMULARIO" class="boton_form morado" /><br> <br> 
+                 <input type="checkbox" id="privacy" name="privacy" required>
+                 <label for="privacy">Acepto la <a href="../pages/privacidad.html" target="_blank">Política de privacidad</a></label><br><br>
+            </div>
+            
+        </aside>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com" target="_blank">
+               <img src="../images/facebook.png" alt="Facebook" class="social"></a>
+            <a href="https://www.instagram.com" target="_blank">
+               <img src="../images/instagram.png" alt="Instagram" class="social"></a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../images/x.png" alt="Twitter" class="social"></a>
+        </div>
+        <div class="direccion"> 
+            <p> C/Macarena, Casco Antiguo, Sevilla, España.</p>
+            <p><a href="../pages/aviso.html">Aviso Legal</a></p>
+            <p>&copy; <span id="year"></span>Zahara. Todos los derechos reservados.</p>
+        </div>
+
+
+
+    </footer>
+    
+</body>
+</html>
