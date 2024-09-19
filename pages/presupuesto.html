@@ -14,24 +14,24 @@
         </header>
         
     <nav>
-        <div class="menu"> 
-            <span class="boton">
+        <ul class="menu"> 
+            <li class="boton">
                 <a href="../index.html" class="menu"> Índice</a>
-            </span>
-            <span class="boton">
+            </li>
+            <li class="boton">
                 <a href="../pages/noticias.html" class="menu"> Noticias</a>
-            </span>
-            <span class="boton">
+            </li>
+            <li class="boton">
                 <a href="../pages/contacto.html" class="menu"> Encuéntranos</a>
-            </span>
-            <span class="boton">
+            </li>
+            <li class="boton">
                 <a href="../pages/productos.html" class="menu"> Galería</a>
-            </span>
-            <span class="boton">
+            </li>
+            <li class="boton">
                 <a href="../pages/presupuesto.html" class="menu"> Registro</a>
-            </span>
+            </li>
 
-        </div>
+        </ul>
     </nav>
     <main>
         <section>
@@ -47,17 +47,17 @@
             <h2 class="h"> Rellena los siguientes campos:</h2>
             <div class="formulario">
                 <input type="text" name="nombre" class="caja_gris" maxlength="50"
-                 size="40" id="nombre" value="" placeholder="Nombre (requerido)"
+                 size="40" id="nombre" value=""  pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s'-]{2,}" placeholder="Nombre (requerido)"
                  required /> <br><br>
                 <input type="text" name="direccion" class="caja_gris" maxlength="50"
-                 size="40" id="direccion" value="" placeholder="Dirección (requerido)"
+                 size="40" id="direccion" value="" pattern="[A-Za-z0-9\s,.-]{5,}" placeholder="Dirección (requerido)"
                  required /> <br><br>
                  <input type="tel" name="telefono" class="caja_gris" maxlength="50"
-                 size="40" id="telefono" value="" placeholder="Teléfono (requerido)"
+                 size="40" id="telefono" value=""  pattern="\+?[0-9]{10,15}"  placeholder="+1234567890 (requerido)"
                  required /> <br><br>
-                 <input type="number" name="edad" class="caja_gris" id="edad" min="0" max="120" placeholder="Edad (requerido)" required /> <br><br>
+                 <input type="number" name="edad" class="caja_gris" id="edad" min="0" max="120"  pattern="([1-9][0-9]?|1[01][0-9]|120)"  placeholder="Edad (requerido)" required /> <br><br>
                  <input type="email" name="email" class="caja_gris" maxlength="50"
-                 size="40" id="mail" value="" placeholder="E-mail (requerido)"
+                 size="40" id="mail" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Mail@example.com (requerido)"
                  required /> <br><br>
                  <input type="submit" name="Boton de enviar" value="ENVIAR FORMULARIO" class="boton_form morado" />
                  <input type="reset" name="Boton de borrado" value="BORRAR FORMULARIO" class="boton_form morado" /><br> <br> 
